@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
         return -1;
     }
     else {
-        printf("[+] Correct key! Now create a simple keygen.");
+        printf("[+] Correct key!");
         return 0;
     }
 }
