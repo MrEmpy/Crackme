@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
     banner();
     printf("Put the key: ");
-    scanf("%s", input_key);
+    scanf("%10s", input_key);
     for (int i = 0, j = 0; i < len; ++i, j += 2)
         sprintf(hex + j, "%02x", key[i] & 0xff);
 
