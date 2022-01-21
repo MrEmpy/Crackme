@@ -20,17 +20,17 @@ int main(int argc, char** argv) {
 
     banner();
     printf("Put the key: ");
-    scanf("%10s", input_key);
+    scanf("%20s", input_key);
     for (int i = 0, j = 0; i < len; ++i, j += 2)
         sprintf(hex + j, "%02x", key[i] & 0xff);
 
     // printf("%s", hex);
     if (strncmp(input_key, hex, strlen(hex))) {
-        printf("[-] Incorrect key!");
+        printf("[-] Incorrect key!\n");
         return -1;
     }
     else {
-        printf("[+] Correct key!");
+        printf("[+] Correct key!\n");
         return 0;
     }
 }
